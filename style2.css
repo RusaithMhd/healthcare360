@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("images/Kerfin7-NEA-2123.jpg") no-repeat center/cover;
+}
+
+html {
+  font-size: 80%;
+}
+
+.home {
+  position:absolute;
+  padding: 10px;
+  margin-left:58%;
+  bottom: 88%;
+  text-align: center;
+  width: 25%;
+  background: #265d81;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.home:hover {
+  background: #930909;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 400px;
+  height: 500px;
+  background: transparent;
+  border: 2px solid #265d81;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scaleX(1);
+  transition: transform 0.5s ease 0.2s ease;
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.form-box {
+  width: 100%;
+  padding: 10%;
+}
+
+.form-box h2 {
+  padding: 50px;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.input-box {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border-bottom: 0.5px solid #fff;
+  margin-bottom: 10%;
+  font-size: 1em;
+}
+
+.input-box label {
+  position: relative;
+  top: -140%;
+  left: 5px;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #cfcfcfbc;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #265d81;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: larger;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+#confirmation-message {
+  align-items: center;
+  display:none;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(255, 0, 0);
+  margin-top: 10px;
+}
+
+/* Media Query for screens with a maximum width of 768px (typical for mobile) */
+@media (max-width: 768px) {
+  .home {
+    font-size: medium;
+    width: 30%;
+  }
+
+  .wrapper {
+    width: 70%;
+  }
+
+  .form-box {
+    padding: 5%;
+  }
+
+  .form-box h2 {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+
+  .input-box label {
+    top: -120%;
+  }
+
+  .btn {
+    font-size: medium;
+    width: 50%;
+    margin-left: 25%;
+
+    
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Appointment</title>
+    <link rel="icon" href="my images/top.png">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-box Appointment">
+            <h2>Appointment</h2>
+            <a class="home" href="index.html">home</a>
+            <form id="appointmentsForm" action="index.php" method="post">
+                <div class="input-box">
+                    <input type="text" name="name" required>
+                    <label>Name</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="tel" name="phoneNumber" required>
+                    <label>Phone Number</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+
+                <button type="button" class="btn" onclick="submitForm()">Continue</button>
+            </form>
+
+            <div id="confirmation-message" style="display: none;">
+                <p>You are done. Wait for the call.</p>
+                <button type="button" class="ok" onclick="clearFormAndHideConfirmation()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
